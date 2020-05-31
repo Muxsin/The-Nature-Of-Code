@@ -67,12 +67,11 @@ class Vector2D {
     }
 
     limit(a) {
-        if(this.x > a) {
-            this.x = a;
+        if(this.mag() > a) {
+            this.setMag(a);
         }
-        if(this.y > a) {
-            this.y = a;
-        }
+
+        return this;
     }
     
     copy() {
