@@ -52,7 +52,7 @@ class Vector2D {
         }
     }
 
-    random2D(min, max) {
+    static random2D(min, max) {
         this.x = Math.ceil(Math.random() * (max - min) + min);
         this.y = Math.ceil(Math.random() * (max - min) + min);
         
